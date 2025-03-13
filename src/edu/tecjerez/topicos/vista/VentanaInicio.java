@@ -27,7 +27,7 @@ public class VentanaInicio extends JFrame{
 
 	public VentanaInicio() {
 		getContentPane().setBackground(new Color (255, 249, 176) );
-		setSize(700, 500);
+		setSize(700, 530);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 		setTitle("Calculando AREAS de Figuras ");
@@ -69,14 +69,56 @@ public class VentanaInicio extends JFrame{
 				desktopPane.setBounds(10, 100, 670, 360);//Medida de donde puede ser visible el Internal FRame
 				desktopPane.add(InternalFrame);
 				add(desktopPane);
-				
+
 				//****************Panel 1---------------------------------------------------------------				
 				JPanel panel1 = new JPanel();
 				panel1.setLayout(null);
 				panel1.setBounds(5, 5, 770, 150);
 				panel1.setBackground(new Color(255, 236  , 247));
-				InternalFrame.add(panel1);
 
+				JMenuBar menuBar = new JMenuBar();//DECLARACION DEL MENU BAR
+				menuBar.setBounds(0, 0, 830,30);
+				
+				
+				JMenu btnDosDimensiones  = new JMenu("2D");/////////////////////////////////////////////////
+				menuBar.add(btnDosDimensiones);
+				
+				JMenu Conicos = new JMenu ("Conicos");
+				btnDosDimensiones.add(Conicos);
+				
+				JMenuItem Circulo = new JMenuItem ("Circulo");
+				Conicos.add(Circulo);
+				
+				JMenuItem Elipse = new JMenuItem ("Elipse");
+				Conicos.add(Elipse);
+				
+				JMenu Poligono = new JMenu ("Poligono");
+				btnDosDimensiones.add(Poligono);
+				
+				JMenuItem Rombo = new JMenuItem ("Rombo");
+				Poligono.add(Rombo);
+
+				JMenu btnTresDimensiones= new JMenu("3D");///////////////////////////////////////////////
+				menuBar.add(btnTresDimensiones);
+				
+				JMenuItem Cono = new JMenuItem ("Cono");
+				btnTresDimensiones.add(Cono);
+				
+				JMenuItem Piramide = new JMenuItem ("Piramide");
+				btnTresDimensiones.add(Piramide);
+
+				JMenu btnOtras = new JMenu("Otras");/////////////////////////////////////////////
+				menuBar.add(btnOtras);
+				
+				JMenuItem Triangulo = new JMenuItem ("Triangulo");
+				btnOtras.add(Triangulo);
+				
+				JMenuItem Rectangulo = new JMenuItem ("Rectangulo");
+				btnOtras.add(Rectangulo);
+				
+				setJMenuBar(menuBar);
+				panel1.add(menuBar);
+				InternalFrame.add(panel1);
 			}
 
 		});
