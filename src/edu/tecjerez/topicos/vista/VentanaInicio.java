@@ -39,7 +39,7 @@ public class VentanaInicio extends JFrame {
 
 
 
-	protected VentanaInicio() {
+	public VentanaInicio() {
 		getContentPane().setBackground(new Color (255, 249, 176) );
 		setSize(700, 530);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
