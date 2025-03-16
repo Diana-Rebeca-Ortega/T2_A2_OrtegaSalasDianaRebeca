@@ -26,9 +26,16 @@ public class VentanaInicio extends JFrame {
 	//LOGICA 
 	//triangulo t1 = new triangulo();
 	//figuras.Rectangulo r1 = new figuras().new Rectangulo();
-	
 
 
+	private JPanel formatoDeVentanasParaLasFiguras(int r, int g, int b) {
+		JPanel panelFigura = new JPanel();
+		panelFigura.setLayout(null);
+		panelFigura.setBounds(30,30, 600, 280);
+		panelFigura.setBackground(new Color(r, g, b ));
+		return panelFigura;
+
+	}
 
 
 
@@ -95,15 +102,12 @@ public class VentanaInicio extends JFrame {
 
 				JMenuItem Circulo = new JMenuItem ("Circulo");
 				Conicos.add(Circulo);
+
 				Circulo.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						JPanel panelCirculo = new JPanel();
-						panelCirculo.setLayout(null);
-						panelCirculo.setBounds(30,30, 600, 280);
-						panelCirculo.setBackground(new Color(213, 229, 213 ));
-						venCirculo.InterfasCirculo(panelCirculo, panel1);
-						
+						venCirculo.InterfasCirculo(formatoDeVentanasParaLasFiguras(213, 229, 213), panel1);
+
 					}
 				});
 
@@ -112,12 +116,7 @@ public class VentanaInicio extends JFrame {
 				Elipse.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						JPanel panelElipse = new JPanel();
-						panelElipse.setLayout(null);
-						panelElipse.setBounds(30,30, 600, 280);
-						panelElipse.setBackground(new Color(112, 227, 213 ));
-						venElipse.InterfasElipse(panelElipse, panel1);
-						
+						venElipse.InterfasElipse(formatoDeVentanasParaLasFiguras(112, 227, 213), panel1);
 					}
 				});
 
@@ -129,12 +128,7 @@ public class VentanaInicio extends JFrame {
 				Rombo.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						JPanel panelRombo = new JPanel();
-						panelRombo.setLayout(null);
-						panelRombo.setBounds(30,30, 600, 280);
-						panelRombo.setBackground(new Color(219, 178, 245 ));
-						venRombo.InterfasRombo(panelRombo, panel1);
-						
+						venRombo.InterfasRombo(formatoDeVentanasParaLasFiguras(219, 178, 245), panel1);
 					}
 				});
 
@@ -146,12 +140,8 @@ public class VentanaInicio extends JFrame {
 				Cono.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						JPanel panelCono = new JPanel();
-						panelCono.setLayout(null);
-						panelCono.setBounds(30,30, 600, 280);
-						panelCono.setBackground(new Color(219, 178, 245 ));
-						venCono.InterfasCono(panelCono, panel1);
-						
+						venCono.InterfasCono(formatoDeVentanasParaLasFiguras(219, 100, 245), panel1);
+
 					}
 				});
 
@@ -160,30 +150,22 @@ public class VentanaInicio extends JFrame {
 				Piramide.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						JPanel panelPiramide = new JPanel();
-						panelPiramide.setLayout(null);
-						panelPiramide.setBounds(30,30, 600, 280);
-						panelPiramide.setBackground(new Color(230, 70, 165 ));
-						venPiramide.InterfasPiramide(panelPiramide, panel1);
-						
+						venPiramide.InterfasPiramide(formatoDeVentanasParaLasFiguras(230, 70, 165), panel1);
+
 					}
 				});
-				
+
 
 				btnOtras = new JMenu("Otras");/////////////////////////////////////////////BOTON OTROS
 				menuBar.add(btnOtras);
 
 				Triangulo = new JMenuItem ("Triangulo");
 				btnOtras.add(Triangulo);
-				
+
 				Triangulo.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						JPanel panelTriangulo = new JPanel();
-						panelTriangulo.setLayout(null);
-						panelTriangulo.setBounds(30,30, 600, 280);
-						panelTriangulo.setBackground(new Color(255, 193, 180 ));
-						ventanitaTriangulo.InterfasTriangulo(panelTriangulo, panel1);
+						ventanitaTriangulo.InterfasTriangulo(formatoDeVentanasParaLasFiguras(255, 193, 180), panel1);
 
 					}
 
@@ -192,15 +174,11 @@ public class VentanaInicio extends JFrame {
 				JMenuItem Rectangulo = new JMenuItem ("Rectangulo");
 				btnOtras.add(Rectangulo);
 				Rectangulo.addActionListener(new ActionListener() {
-					
+
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						JPanel panelRectangulo = new JPanel();
-						panelRectangulo.setLayout(null);
-						panelRectangulo.setBounds(30,30, 600, 280);
-						panelRectangulo.setBackground(new Color(221, 235, 157 ));
-						ventanitaRectangulo.InterfasTriangulo(panelRectangulo, panel1);
-						
+						ventanitaRectangulo.InterfasTriangulo(formatoDeVentanasParaLasFiguras(221, 235, 157), panel1);
+
 					}
 				});
 

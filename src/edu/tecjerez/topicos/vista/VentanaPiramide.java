@@ -22,7 +22,7 @@ public class VentanaPiramide {
 		
 		
 		
-		JLabel txtFormulaHeron = new JLabel ("Calculo de area de una Piramide Triangular");
+		JLabel txtFormulaHeron = new JLabel ("Calculo de Volumen de una Piramide Triangular");
 		txtFormulaHeron.setBounds(30,00, 500,200);	
 		txtFormulaHeron.setFont(new Font("Georgia", Font.BOLD, 16));
 		txtFormulaHeron.setIcon(new ImageIcon("C:\\Users\\Marcelo\\eclipse-workspace\\Sesion10_Componentes y librerias\\src\\edu\\tecjerez\\topicos\\vista\\ICONOS\\piramide.png"));

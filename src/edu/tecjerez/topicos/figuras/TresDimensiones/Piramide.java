@@ -4,16 +4,11 @@ public class Piramide {
 	   double area;
 
 	    public double obtenerAreaPiramide(double a, double b, double c, double h) {
-	        // Calcula el perímetro de la base
-	        double perimetroBase = a + b + c;
+	    	  double s = (a + b + c) / 2;
+	          double areaBase = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+	          double volumen = (1.0 / 3.0) * areaBase * h;
 
-	        // Calcula la altura lateral
-	        double alturaLateral = Math.sqrt(Math.pow(h, 2) + (Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2)) / 4);
-
-	        // Calcula el área de la pirámide
-	        double areaPiramide = Math.sqrt(Math.pow(h, 2) + (Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2)) / 4) * perimetroBase / 2;
-
-	        return areaPiramide;
+	        return volumen;
 	    }
 
 }

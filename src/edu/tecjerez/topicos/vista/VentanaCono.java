@@ -22,7 +22,7 @@ public class VentanaCono {
 		
 		
 		
-		JLabel txtFormulaHeron = new JLabel ("Calculo de area de un Cono");
+		JLabel txtFormulaHeron = new JLabel ("Calculo de volumen de un Cono");
 		txtFormulaHeron.setBounds(30,00, 500,200);	
 		txtFormulaHeron.setFont(new Font("Georgia", Font.BOLD, 16));
 		txtFormulaHeron.setIcon(new ImageIcon("C:\\Users\\Marcelo\\eclipse-workspace\\Sesion10_Componentes y librerias\\src\\edu\\tecjerez\\topicos\\vista\\ICONOS\\cono.png"));
