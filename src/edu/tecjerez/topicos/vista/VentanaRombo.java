@@ -21,7 +21,7 @@ import edu.tecjerez.topicos.figuras.figuras.Rectangulo;
 
 	public class VentanaRombo {
 		Poligono.Rombo R1 = new Poligono().new Rombo();
-	public void InterfasRombo(JPanel panelRombo, JPanel panel1) {
+		protected void InterfasRombo(JPanel panelRombo, JPanel panel1) {
 		
 		
 		

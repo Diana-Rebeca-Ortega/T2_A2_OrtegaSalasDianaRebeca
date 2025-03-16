@@ -14,9 +14,9 @@ import javax.swing.SwingConstants;
 
 import edu.tecjerez.topicos.figuras.triangulo;
 
-public class VentanaTriangulo {
+public class VentanaTriangulo{
 	triangulo t1 = new triangulo();
-public void InterfasTriangulo(JPanel panelTriangulo, JPanel panel1) {
+protected void InterfasTriangulo(JPanel panelTriangulo, JPanel panel1) {
 	
 	
 	

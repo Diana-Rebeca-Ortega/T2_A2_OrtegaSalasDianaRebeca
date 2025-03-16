@@ -39,7 +39,7 @@ public class VentanaInicio extends JFrame {
 
 
 
-	public VentanaInicio() {
+	protected VentanaInicio() {
 		getContentPane().setBackground(new Color (255, 249, 176) );
 		setSize(700, 530);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -177,7 +177,7 @@ public class VentanaInicio extends JFrame {
 
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						ventanitaRectangulo.InterfasTriangulo(formatoDeVentanasParaLasFiguras(221, 235, 157), panel1);
+						ventanitaRectangulo.InterfasRectangulo(formatoDeVentanasParaLasFiguras(221, 235, 157), panel1);
 
 					}
 				});

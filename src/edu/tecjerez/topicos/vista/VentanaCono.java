@@ -18,7 +18,7 @@ import edu.tecjerez.topicos.figuras.TresDimensiones.Cono;
 
 public class VentanaCono {
 		Cono c1 = new Cono();
-	public void InterfasCono(JPanel panelCono, JPanel panel1) {
+		protected void InterfasCono(JPanel panelCono, JPanel panel1) {
 		
 		
 		

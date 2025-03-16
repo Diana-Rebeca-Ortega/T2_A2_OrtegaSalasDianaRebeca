@@ -18,7 +18,7 @@ import edu.tecjerez.topicos.figuras.TresDimensiones.Piramide;
 
 public class VentanaPiramide {
 		Piramide p1 = new Piramide();
-	public void InterfasPiramide(JPanel panelPiramide, JPanel panel1) {
+		protected void InterfasPiramide(JPanel panelPiramide, JPanel panel1) {
 		
 		
 		

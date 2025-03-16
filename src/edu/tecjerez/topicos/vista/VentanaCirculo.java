@@ -19,7 +19,7 @@ import edu.tecjerez.topicos.figuras.figuras.Rectangulo;
 
 public class VentanaCirculo {
 	Conicos.Circulo c1 = new Conicos().new Circulo();
-public void InterfasCirculo(JPanel panelCirculo, JPanel panel1) {
+	protected void InterfasCirculo(JPanel panelCirculo, JPanel panel1) {
 	
 	
 	

@@ -18,7 +18,7 @@ import edu.tecjerez.topicos.figuras.figuras.Rectangulo;
 
 public class VentanaRectangulo {
 	figuras.Rectangulo r1 = new figuras().new Rectangulo();
-public void InterfasTriangulo(JPanel panelRectangulo, JPanel panel1) {
+	protected void InterfasRectangulo(JPanel panelRectangulo, JPanel panel1) {
 	
 	
 	

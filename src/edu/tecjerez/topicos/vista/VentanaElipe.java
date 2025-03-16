@@ -19,7 +19,7 @@ import edu.tecjerez.topicos.figuras.DosDimensiones.Conicos.Circulo;
 
 	public class VentanaElipe {
 		Conicos.Elipse e1 = new Conicos().new Elipse();
-	public void InterfasElipse(JPanel panelElipse, JPanel panel1) {
+		protected void InterfasElipse(JPanel panelElipse, JPanel panel1) {
 		
 		
 		
