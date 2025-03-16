@@ -11,29 +11,23 @@ import edu.tecjerez.topicos.figuras.figuras;
 import edu.tecjerez.topicos.figuras.triangulo;
 import edu.tecjerez.topicos.figuras.DosDimensiones.Conicos;
 
-//import edu.tecjerez.topicos.figuras.circulo;
-
-
-
 
 public class VentanaInicio extends JFrame {
 	JMenu btnOtras;
 	JMenuItem Triangulo;
-	//circulo c1 = new circulo(); //No se puede usar porque el modificador de acceso es default 
+	//VENTANAS
+	VentanaTriangulo ventanitaTriangulo = new VentanaTriangulo();
+	VentanaRectangulo ventanitaRectangulo = new VentanaRectangulo();
+	VentanaCirculo venCirculo= new  VentanaCirculo();
+	VentanaElipe venElipse = new VentanaElipe();
+	VentanaRombo venRombo = new VentanaRombo();
+	VentanaCono venCono = new VentanaCono();
+	VentanaPiramide venPiramide = new VentanaPiramide();
+	//LOGICA 
+	//triangulo t1 = new triangulo();
+	//figuras.Rectangulo r1 = new figuras().new Rectangulo();
+	
 
-	triangulo t1 = new triangulo();
-
-	figuras f1 = new figuras();
-
-
-	//Rectanguo r1 = new Rectangulo// no se puede instanciar una subclase de esta manera
-
-	//FORMA CORRECTA DE instancias una clase interna ////siiiiiiiiiiiiiiiiiiiiiiiiii esta correcto 
-	figuras.Rectangulo r1 = new figuras().new Rectangulo();
-
-
-	Conicos conic = new Conicos();
-	Conicos.Circulo c1 = new Conicos().new Circulo();
 
 
 
@@ -101,31 +95,87 @@ public class VentanaInicio extends JFrame {
 
 				JMenuItem Circulo = new JMenuItem ("Circulo");
 				Conicos.add(Circulo);
+				Circulo.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						JPanel panelCirculo = new JPanel();
+						panelCirculo.setLayout(null);
+						panelCirculo.setBounds(30,30, 600, 280);
+						panelCirculo.setBackground(new Color(213, 229, 213 ));
+						venCirculo.InterfasCirculo(panelCirculo, panel1);
+						
+					}
+				});
 
 				JMenuItem Elipse = new JMenuItem ("Elipse");
 				Conicos.add(Elipse);
+				Elipse.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						JPanel panelElipse = new JPanel();
+						panelElipse.setLayout(null);
+						panelElipse.setBounds(30,30, 600, 280);
+						panelElipse.setBackground(new Color(112, 227, 213 ));
+						venElipse.InterfasElipse(panelElipse, panel1);
+						
+					}
+				});
 
 				JMenu Poligono = new JMenu ("Poligono");
 				btnDosDimensiones.add(Poligono);
 
 				JMenuItem Rombo = new JMenuItem ("Rombo");
 				Poligono.add(Rombo);
+				Rombo.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						JPanel panelRombo = new JPanel();
+						panelRombo.setLayout(null);
+						panelRombo.setBounds(30,30, 600, 280);
+						panelRombo.setBackground(new Color(219, 178, 245 ));
+						venRombo.InterfasRombo(panelRombo, panel1);
+						
+					}
+				});
 
 				JMenu btnTresDimensiones= new JMenu("3D");///////////////////////////////////////////////
 				menuBar.add(btnTresDimensiones);
 
 				JMenuItem Cono = new JMenuItem ("Cono");
 				btnTresDimensiones.add(Cono);
+				Cono.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						JPanel panelCono = new JPanel();
+						panelCono.setLayout(null);
+						panelCono.setBounds(30,30, 600, 280);
+						panelCono.setBackground(new Color(219, 178, 245 ));
+						venCono.InterfasCono(panelCono, panel1);
+						
+					}
+				});
 
 				JMenuItem Piramide = new JMenuItem ("Piramide");
 				btnTresDimensiones.add(Piramide);
+				Piramide.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						JPanel panelPiramide = new JPanel();
+						panelPiramide.setLayout(null);
+						panelPiramide.setBounds(30,30, 600, 280);
+						panelPiramide.setBackground(new Color(230, 70, 165 ));
+						venPiramide.InterfasPiramide(panelPiramide, panel1);
+						
+					}
+				});
+				
 
 				btnOtras = new JMenu("Otras");/////////////////////////////////////////////BOTON OTROS
 				menuBar.add(btnOtras);
 
 				Triangulo = new JMenuItem ("Triangulo");
 				btnOtras.add(Triangulo);
-				VentanaTriangulo ventanitaTriangulo = new VentanaTriangulo();
+				
 				Triangulo.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
@@ -139,12 +189,20 @@ public class VentanaInicio extends JFrame {
 
 				});
 
-
-
-
-
 				JMenuItem Rectangulo = new JMenuItem ("Rectangulo");
 				btnOtras.add(Rectangulo);
+				Rectangulo.addActionListener(new ActionListener() {
+					
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						JPanel panelRectangulo = new JPanel();
+						panelRectangulo.setLayout(null);
+						panelRectangulo.setBounds(30,30, 600, 280);
+						panelRectangulo.setBackground(new Color(221, 235, 157 ));
+						ventanitaRectangulo.InterfasTriangulo(panelRectangulo, panel1);
+						
+					}
+				});
 
 				setJMenuBar(menuBar);
 				panel1.add(menuBar);
